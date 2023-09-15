@@ -1,0 +1,13 @@
+<table>
+      <tr>
+          <th>Nome</th><!-- th = header -->
+          <th>Idade</th>
+          <!-- <th>Cidade</th> -->
+      </tr>
+       <tr *ngFor="let person of people"><!-- tr = rows -->
+          <td>{{person.name}}</td><!-- td = data in cell -->
+          <td>{{person.age}}</td>
+          <!-- <td>São Paulo</td> -->
+      </tr>
+  </table>
+
