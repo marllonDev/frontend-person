@@ -17,4 +17,6 @@ export class PersonService {
   getAll(): Observable<any> {
     return this.http.get(baseUrl);
   }
+
+  
 }

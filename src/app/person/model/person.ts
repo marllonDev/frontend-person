@@ -1,5 +1,7 @@
 export class Person {
-      id!: String;
+      id!: Number;
       name!: String;
+      lastName!: String;
       age!: Number;
+      email!: String;
 }
