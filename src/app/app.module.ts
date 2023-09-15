@@ -6,19 +6,27 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MenuTitleComponent } from './components/menu-title/menu-title.component';
-import { TableInformationComponent } from './person/table-information/table-information.component';
+import { TableInformationComponent } from './pages/table-information/table-information.component';
+
+import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { ButtonModule } from 'primeng/button';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MenuTitleComponent,
-    TableInformationComponent
+    TableInformationComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

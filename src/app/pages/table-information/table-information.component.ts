@@ -1,6 +1,7 @@
-import { Person } from '../model/person';
-import { PersonService } from './../service/person.service';
+import { Person } from '../../person/model/person';
+import { PersonService } from '../../person/service/person.service';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-table-information',

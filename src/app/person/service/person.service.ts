@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/internal/Observable';
+import { Person } from '../model/person';
+import { PersonModel } from 'src/app/pages/cadastro/modelParaCadastro/personModel';
 
 
 const baseUrl = "/person";
@@ -18,5 +20,7 @@ export class PersonService {
     return this.http.get(baseUrl);
   }
 
-  
+  add(person : PersonModel): Observable <PersonModel>{
+    return this.http.post<PersonModel>(baseUrl, person)
+  }
 }

@@ -1,0 +1,19 @@
+<table>
+    <a [routerLink]="['cadastro']">
+        <div class="new">
+            <p-button label="Novo"></p-button>
+        </div>
+    </a>
+    <tr>
+        <th>NOME</th><!-- th = header -->
+        <th>SOBRENOME</th>
+        <th>IDADE</th>
+        <th>EMAIL</th>
+    </tr>
+    <tr *ngFor="let person of people"><!-- tr = rows -->
+        <td>{{person.name}}</td><!-- td = data in cell -->
+        <td>{{person.lastName}}</td>
+        <td>{{person.age}}</td>
+        <td>{{person.email}}</td>
+    </tr>
+</table>
